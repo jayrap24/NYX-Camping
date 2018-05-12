@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 500px;
+    background: #f4f4f4;
+    
+}
+
+#navGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#logo{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+}
+
+.navButton{
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family:sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding: 5px;
+    margin: 5px
+
+    
+   
+    
+}
+
+
+#about{
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    color: ghostwhite;
+    
+    
+    
+}
+
+#package{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    color: ghostwhite;
+    
+}
+
+#contact{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    color: ghostwhite;
+    
+}
+
+nav{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 3;
+    
+} 
+
+.mainImg{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    z-index: 3;
+    background-image:url("/NYX/unsplash.jpg");
+    background-size: cover;
+    opacity: .7;
+}
+
+
+.description{
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    background: #b77250;
+    z-index: 2;
+}
+
+#descriptionGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    
+}
+
+.info{
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 7; 
+    
+}
+
+#infoGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    z-index: 3;
+    max-width: 500px;
+    padding: 10px;
+    
+    
+}
+
+h1{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: ghostwhite;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 2em;
+    letter-spacing: 1px;
+    
+   
+}
+
+p{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin: 12px;
+    color: ghostwhite;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 14px
+    
+}
+
+
+/* Second Section */
+
+.row{
+    padding: 0;
+}
+
+.box {
+  height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.col-3,.col-2{
+    background: white;
+    
+    padding: 0;
+    height: 500px;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+#aboutTitle{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: none;
+    text-align: center;
+    font-size: 3em;
+    color: #494949;
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 1.7px;
+    margin-top: 80px;
+}
+
+
+
+
+#aboutDescription{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background: none;
+    text-align: center; 
+    padding: 50px;
+    letter-spacing: 1.3px;
+    
+}
+#aboutDescription p {
+    color: #494949;
+    padding: 10px;
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+#aboutImg{
+    
+}
+
+
+
+
+
+/*float-grid */
+
+
+
+.row {
+  max-width: 1240px;
+    margin: auto;
+
+}
+
+.col-3,.col-2{
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (min-width: 740px) {
+  .col-3 {
+    width: 33.33%;
+  }
+
+    .col-2 {
+    width: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 520px) {
+ 
+    
+    
+    .info p{
+        display: none;
+    }
+
+        h1{
+        display: none;
+    }
+    
+    .mainImg{
+       grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    z-index: 3;
+    background-image:url("/NYX/unsplash.jpg");
+    background-size: cover;
+    opacity: .7;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
